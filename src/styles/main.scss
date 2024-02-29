@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:wght@300;400&family=Poppins:wght@400;500;700&family=Rubik:wght@400;700&display=swap');
+
+:root {
+    --bg: #F2F2FE;
+    --violet: #5f5bcf;
+    --light: #c9cad3;
+    --light-dark:#6b6d7e;
+}
+
+body {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    color: #0e0d0d;
+    background-color: var(--bg);
+    font-family: 'Rubik', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input,
+button {
+    background: none;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+section {
+    border-radius: 6px;
+}
+
+button {
+    border-radius: 6px;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+
+    &:disabled {
+        opacity: 0.4;
+        cursor: default;
+    }
+}
+
+button:hover {
+    color: var(--violet);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+    padding: 0;
+    border: none;
+}

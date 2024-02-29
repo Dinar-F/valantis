@@ -1,0 +1,38 @@
+.app {
+    max-width: 1200px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+
+.spinner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 103px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        top: 160px;
+    }
+
+    &__icon {
+        animation: rotate-keyframes 1s linear infinite;
+
+        circle {
+            stroke-width: 1.5;
+            stroke-opacity: 1;
+            stroke: var(--light-dark);
+        }
+
+        path {
+            stroke-width: 1.5;
+            stroke: rgba(#fff, 1);
+        }
+    }
+}
+
+@keyframes rotate-keyframes {
+    100% {
+        transform: rotate(360deg);
+    }
+}
